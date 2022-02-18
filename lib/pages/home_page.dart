@@ -1,6 +1,8 @@
-// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
 import 'package:bringin/shared/theme.dart';
+import 'package:bringin/widgets/our_product.dart';
+import 'package:bringin/widgets/our_service.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -53,7 +55,6 @@ class HomePage extends StatelessWidget {
         width: double.infinity,
         height: 20,
         margin: EdgeInsets.only(top: 20, right: 10),
-        // ignore: prefer_const_literals_to_create_immutables
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -76,6 +77,86 @@ class HomePage extends StatelessWidget {
       );
     }
 
+    Widget ourService() {
+      return Container(
+        margin: EdgeInsets.only(top: 10),
+        height: 100,
+        width: double.infinity,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              CustomOurService(title: 'Performace Builds', price: 'Rp 540.00',),
+              CustomOurService(title: 'Service Tune Up', price: 'Rp 100.00',),
+              CustomOurService(title: 'Performace Builds', price: 'Rp 540.00',),
+            ],
+          ),
+        ),
+      );
+    }
+
+    Widget ourProductText(){
+      return Container(
+        width: double.infinity,
+        height: 20,
+        margin: EdgeInsets.only(top: 20, right: 10),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+          Text(
+            'Our Product',
+            style: blackTextStyle.copyWith(
+              fontSize: 20,
+              fontWeight: semiBold
+            ),
+          ),
+          Text(
+            'See All', 
+            style: redTextStyle.copyWith(
+              fontSize: 16,
+              fontWeight: semiBold
+            ),
+          )
+        ],
+        ),
+      );
+    }
+
+    Widget ourProduct() {
+      return Container(
+        margin: EdgeInsets.only(top: 10, bottom: 20),
+        height: 170,
+        width: double.infinity,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              CustomOurProduct(
+                imageUrl: 'assets/injector.png', 
+                title: 'Injector', 
+                price: 'Rp 340.000'
+              ),
+              CustomOurProduct(
+                imageUrl: 'assets/air_cleanner.png', 
+                title: 'Air Cleanner', 
+                price: 'Rp 150.000'
+              ),
+              CustomOurProduct(
+                imageUrl: 'assets/ban.png', 
+                title: 'Ban', 
+                price: 'Rp 320.000'
+              ),
+              CustomOurProduct(
+                imageUrl: 'assets/regulator.png', 
+                title: 'Regulator', 
+                price: 'Rp 500.000'
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: keyWhiteColor,
       body: ListView(
@@ -83,7 +164,10 @@ class HomePage extends StatelessWidget {
         children: [
           searchColumn(),
           bannerSparepart(),
-          ourServiceText()
+          ourServiceText(),
+          ourService(),
+          ourProductText(),
+          ourProduct()
         ],
       ),
     );

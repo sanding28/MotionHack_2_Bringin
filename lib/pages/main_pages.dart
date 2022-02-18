@@ -49,11 +49,11 @@ class MainPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             // ignore: prefer_const_literals_to_create_immutables
             children: [
-              CustomNavbar(imageUrl: 'assets/home.png', title: 'Home', index: 0,),
+              CustomNavbar(imageUrl: 'assets/home.png', title: '  Home', index: 0,),
               CustomNavbar(imageUrl: 'assets/service.png',title: 'Service', index: 1,),
               CustomNavbar(imageUrl: 'assets/product.png', title: 'Product', index: 2,),
-              CustomNavbar(imageUrl: 'assets/chat.png',title: 'Chat', index: 3,),
-              CustomNavbar(imageUrl: 'assets/profile.png', title: 'Profile', index: 4,),
+              CustomNavbar(imageUrl: 'assets/chat.png',title: '   Chat', index: 3,),
+              CustomNavbar(imageUrl: 'assets/profile.png', title: '  Profile', index: 4,),
             ],
           ),
         )
