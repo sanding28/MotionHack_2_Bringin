@@ -199,7 +199,7 @@ class ServiceCart extends StatelessWidget {
       return CustomButton(
         price: 'Rp 540.000', 
         title: 'Go To Checkout',
-        onPressed: () {},
+        onTap: () {},
       );
     }
 

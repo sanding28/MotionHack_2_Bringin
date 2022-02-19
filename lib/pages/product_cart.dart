@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, unused_label
 
+import 'package:bringin/pages/checkout_product.dart';
 import 'package:bringin/pages/service_cart.dart';
 import 'package:bringin/shared/theme.dart';
 import 'package:bringin/widgets/custom_button.dart';
@@ -192,12 +193,8 @@ class ProducrCart extends StatelessWidget {
       return CustomButton(
         price: 'Rp 150.000', 
         title: 'Go To Checkout',
-        onPressed: () {
-          onTap: () {
-            Navigator.push(context, MaterialPageRoute(
-              builder: (context) => ServiceCart(),
-            ));
-          };
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => CheckoutProduct1()));
         },
       );
     }

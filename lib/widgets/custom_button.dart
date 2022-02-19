@@ -7,19 +7,19 @@ class CustomButton extends StatelessWidget {
 
   final String title;
   final String price;
-  final Function() onPressed;
+  final Function() onTap;
 
   const CustomButton({ 
     Key? key,
     required this.price,
     required this.title,
-    required this.onPressed, 
+    required this.onTap, 
     }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onPressed,
+      onTap: onTap,
       child: Container(
           height: 56,
           width: 250,

@@ -10,6 +10,8 @@ Color keyGreyColor = Color(0xff808080);
 Color kSearchColor = Color(0xfff2f3f2);
 Color keyRedColor = Color(0xffC52626);
 Color keyBlack2Color = Color(0xff000000);
+Color keyStrokeCOlor = Color(0xffF1F1F1);
+Color keyGrey2Color = Color(0xffAAAAAA);
 
 TextStyle blackTextStyle = GoogleFonts.montserrat(
   color: keyBlackColor,
@@ -29,6 +31,10 @@ TextStyle whiteTextStyle = GoogleFonts.montserrat(
 
 TextStyle greyTextStyle = GoogleFonts.montserrat(
   color: keyGreyColor,
+);
+
+TextStyle grey2TextStyle = GoogleFonts.montserrat(
+  color: keyGrey2Color,
 );
 
 FontWeight light = FontWeight.w300;
