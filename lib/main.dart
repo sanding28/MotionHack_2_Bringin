@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:bringin/cubit/pages_cubit.dart';
+import 'package:bringin/pages/signUp_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -19,7 +20,10 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: MainPage(),
+        routes: {
+          '/' : (context) => SignUpPage(),
+          '/main' : (context) => MainPage()
+        },
       ),
     );
   }
