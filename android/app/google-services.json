@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "370399513904",
+    "project_id": "bringin-bafbd",
+    "storage_bucket": "bringin-bafbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370399513904:android:6d4800c3f33c418a570cf5",
+        "android_client_info": {
+          "package_name": "com.groupdua.bringin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370399513904-c45h87aaqbped0qo95l8idodj7vq0nuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu_eS6_SGUAHeue4tm_23G6LpmoU0vzos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370399513904-c45h87aaqbped0qo95l8idodj7vq0nuo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

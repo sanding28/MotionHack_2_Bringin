@@ -130,7 +130,7 @@ class SignUpPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Phone Number",
+                "Password",
                 style: black2TextStyle.copyWith(
                   fontSize: 12,
                   fontWeight: medium
